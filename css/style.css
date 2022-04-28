@@ -1,0 +1,33 @@
+.topbar, .topbar_interno{
+    padding: 15px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.06);
+}
+
+.menu{
+    display:flex;
+    align-content: center;
+}
+
+
+ul{
+    margin: 0px;
+    list-style-type: none;
+    position: relative;
+    top: 5px;
+}
+
+ul li{
+    margin: 0px 30px 0px 0px;
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: 600;
+    position:relative;
+    overflow: hidden;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
