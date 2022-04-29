@@ -1,7 +1,12 @@
+
 .topbar, .topbar_interno{
     padding: 15px 0px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0,0,0,.06);
+}
+
+.topbar_interno .logo img{
+    max-width: 70px;
 }
 
 .menu{
@@ -9,17 +14,20 @@
     align-content: center;
 }
 
-
-ul{
+.topbar .menu .links ul{
     margin: 0px;
     list-style-type: none;
     position: relative;
     top: 5px;
 }
 
-ul li{
+.topbar .menu .links ul li{
     margin: 0px 30px 0px 0px;
     display: inline-block;
+}
+
+.topbar .menu .links ul li:last-child{
+    margin-right: 0px;
 }
 
 ul li a{
@@ -30,4 +38,26 @@ ul li a{
     overflow: hidden;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
+}
+
+.topbar .menu .links ul li a .first{
+    position: absolute;
+    transform: translateY(100%);
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.topbar .menu .links ul li a .second{
+    position: relative;
+    display: block;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
