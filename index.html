@@ -20,34 +20,86 @@
     />
   </head>
   <body>
-    <div class="topbar">
-      <div class="container">
-        <div class="topbar_interno">
-          <div class="logo">
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png"
-                alt=""
-            /></a>
-          </div>
-          <div class="menu">
-            <div class="links">
-              <ul class="ancoras">
-                <li class="atual">
-                  <a href="#home">
-                    <span class="first">Link 1</span>
-                    <span class="second">Link 1</span>
-                  </a>
-                </li>
-                <li><a href="#sobre">Link 2</a></li>
-                <li><a href="">Link 3</a></li>
-                <li><a href="">Link 4</a></li>
-                <li><a href="">Link 5</a></li>
-              </ul>
+    <div class="wrapper">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar_interno">
+            <div class="logo">
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="menu">
+              <div class="links">
+                <ul class="ancoras">
+                  <li class="atual">
+                    <a href="#home">
+                      <span class="first">Link 1</span>
+                      <span class="second">Link 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#sobre">
+                      <span class="first">Link 2</span>
+                      <span class="second">Link 2</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#qqr">
+                      <span class="first">Link 3</span>
+                      <span class="second">Link 3</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#outra">
+                      <span class="first">Link 4</span>
+                      <span class="second">Link 4</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contato">
+                      <span class="first">Link 5</span>
+                      <span class="second">Link 5</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- FIM TOPBAR -->
+
+      <!-- HERO -->
+      <!-- div.hero#home>div.background>div.partesquerda+div.partdireita^div.conteudo -->
+      <div class="hero" id="home">
+        <div class="background">
+          <div class="partesquerda"></div>
+          <div class="partdireita">
+            <!-- div.interno>div.imagem+div.overlay+div.meuoverlay -->
+            <div class="interno">
+              <div class="imagem" data-img-url="./assets/1.jpg"></div>
+              <div class="overlay"></div>
+              <div class="meuoverlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="conteudo">
+          <div class="container">
+            <div class="conteudo_interno">
+              <div class="nome">
+                <h3 class="stroke">Teste</h3>
+                <h3>Teste</h3>
+                <span>Teste</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIM HERO -->
     </div>
   </body>
 </html>

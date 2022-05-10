@@ -1,12 +1,89 @@
-
-.topbar, .topbar_interno{
-    padding: 15px 0px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.06);
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px
+}
+body{
+	font-family: "Mulish";
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.5px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #fff;
+	color: #767676;
 }
 
-.topbar_interno .logo img{
-    max-width: 70px;
+h1, h2, h3, h4, h5, h6{
+	font-weight:500;
+	line-height: 1.4;
+	font-family: "Poppins";
+	color: #000;
+}
+
+.container {
+	max-width: 1400px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	height:auto;
+	padding:0px 40px;
+	position:relative;
+	clear:both;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+@media (max-width: 1040px) {
+.container{padding:0px 20px;}
+}
+
+.wrapper{
+    width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapper, .wrapper *{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+/*---------------------------------------------------*/
+/*	TOPBAR
+/*---------------------------------------------------*/
+.topbar{
+    position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	padding: 20px 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.topbar, .topbar_interno{
+    width: 100%;
+	height: auto;
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.topbar .topbar_interno .logo img{
+    max-width: 50px;
 }
 
 .menu{
@@ -30,7 +107,7 @@
     margin-right: 0px;
 }
 
-ul li a{
+.topbar .menu ul li a{
     text-decoration: none;
     color:#000;
     font-weight: 600;
@@ -60,4 +137,112 @@ ul li a{
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+}
+
+.topbar .menu .links ul li a:hover .first{
+    transform: translateY(0);
+}
+
+.topbar .menu .links ul li a:hover .second{
+    transform: translateY(-100%);
+}
+
+.topbar .menu .links ul li.atual a .first{
+	transform: translateY(0);
+}
+
+.topbar .menu .links ul li.atual a .second{
+	transform: translateY(-100%);
+}
+
+.topbar .menu .links ul li.current a{
+	color: #000;
+}
+
+/*---------------------------------------------------*/
+/*	HERO
+/*---------------------------------------------------*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    clear: both;
+    float: left;
+    position: relative;
+}
+
+.hero .background{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.hero .background .partesquerda{
+	width: 33%;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.hero .background .partdireita{
+	width: 100%;
+	height: 100%;
+	float: left;
+	padding-left: 33%;
+}
+
+.hero .background .partdireita .interno{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero .background .partdireita .imagem{
+	position: absolute;
+	top: -20px;
+	bottom: -20px;
+	left: -20px;
+	right: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero .background .meuoverlay{
+	position:absolute;
+	top: 0px;
+	bottom:0px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 2;
+	left: 0%;
+	transition: left .7s ease;
+}
+
+.hero .background .overlay{
+	position:absolute;
+	top: 0px;
+	bottom:0px;
+	width: 100%;
+/*	background-color: rgba(255,255,255,.3);*/
+	z-index: 1;
+}
+
+.hero .conteudo .container{height: 100%;}
+
+.hero .conteudo{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 4;
+}
+
+.hero .conteudo_interno{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
